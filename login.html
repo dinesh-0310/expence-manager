@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div>
+        <h1>Expense Manager</h1>
+    </div>
+    <div id="form-data">
+        <div>
+            <h2 >
+                Sign In Page
+            </h2>
+        </div>
+        <form>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"/>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password"/>
+            </div>
+            <div>
+                <input type="submit" value="Sign In" id="sign-in-btn">
+            </div>
+            <p id="error-msg"></p>
+        </form>
+        
+    </div>
+    <script src="./global.js"></script>
+    <script src="./login.js"></script>
+</body>
+</html>
