@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Expence Manager</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">    
+	<link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+	<div>
+		<h1>Expense Manager</h1>
+	</div>
+	<div id="form-detail">
+		<div>
+			<h2 >
+				Sign Up Page
+			</h2>
+		</div>
+		<form>
+			<div id="name">
+				<label for="name">Name</label>
+				<input type="text" name="name" placeholder="Name" required>
+				<p id="name-msg" class="error">&nbsp;</p>
+			</div>
+			<div id="email">
+				<label for="email">Email</label>
+				<input type="email" name="email" placeholder="Email" required>
+				<p id="email-msg" class="error">&nbsp;</p>
+			</div>
+			<div id="password">
+				<label for="pass">Password</label>
+				<input type="password" name="password" placeholder="Password" required>
+				<p id="password-msg" class="error">&nbsp;</p>
+			</div>
+			<div id="comf-password">
+				<label for="confirm_password">Confirm Password</label>
+				<input type="password" name="confirm_password" placeholder="Password" required> 
+				<p id="confirm_password-msg" class="error">&nbsp;</p>
+			</div>
+			<div>
+				<input type="submit" value="Sign Up" id="sign-up-btn">
+			</div>
+
+		</form>
+		<p id="validation-msg"></p>
+	</div>
+	<script src="global.js"></script>
+	<script src="signup.js"></script>
+</body>
+</html>
