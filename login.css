@@ -1,54 +1,54 @@
 
-*{
-    text-align: center;
-    box-sizing: border-box;
+* {
+	text-align: center;
+	box-sizing: border-box;
 }
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #f6f5f7;
-    /* background:  url(http://www.expense-manager.in/assets/img/bg/232.jpg);
-    background-size: cover; */
-    /* display: flex;
-    flex-direction: column; */
-} 
-#form-data{
-    border: 1px solid grey;
-    width: 40%;
-    margin: 5% auto;
-    background-color: #f6f5f7;
-    border-radius: 8px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0,0.25), 0 10px 10px rgba(0, 0, 0,0.22);
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f6f5f7;
+	/* background:  url(http://www.expense-manager.in/assets/img/bg/232.jpg);
+	background-size: cover; */
+	/* display: flex;
+	flex-direction: column; */
 }
-form > div{
-    margin: 5% 0;
-    display: flex;
-    flex-direction: column;
+#form-data {
+	border: 1px solid grey;
+	min-width: 400px;
+	width: 40%;
+	margin: 5% auto;
+	background-color: #f6f5f7;
+	border-radius: 8px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-div > input{
-    margin: 0 auto;
-    height: 25px;
-    width: 80%;
-    text-align: left;
-    outline: none;
+form > div {
+	margin: 5% 0;
+	display: flex;
+	flex-direction: column;
 }
-div > label{
-    font-size: 20px;
-    text-align: left;
-    width: 80%;
-    margin: 0 auto;
+div > input {
+	margin: 0 auto;
+	height: 25px;
+	width: 80%;
+	text-align: left;
+	outline: none;
 }
-div > #sign-in-btn{
-    text-align: center;
-    background-color:  rgb(202, 71, 71);
-    border: none;
-    outline: none;
-    height: 35px;
-    width: 82%;
-    color: white;
-    margin-bottom: 2%;
+div > label {
+	font-size: 20px;
+	text-align: left;
+	width: 80%;
+	margin: 0 auto;
 }
-form > #error-msg{
-    color: red;
-    font-weight: 700;
-    
+div > #sign-in-btn {
+	text-align: center;
+	background-color: rgb(202, 71, 71);
+	border: none;
+	outline: none;
+	height: 35px;
+	width: 82%;
+	color: white;
+	margin-bottom: 2%;
+}
+form > #error-msg {
+	color: red;
+	font-weight: 700;
 }

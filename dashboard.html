@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Expence Manager</title>
+	<link rel="stylesheet" href="dashboard.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">    
+
+</head>
+<body>
+	<div class="nav">
+		<div class="logo">
+			<img  alt="Expence Manager logo">
+		</div>
+		<div id="after-login">
+
+		</div>
+		<div class="login-div">
+			<button class="login-btn">SIGNUP/LOGIN</button>
+		</div>
+	</div>
+	<div class="main">
+		<div class="user">
+			<div class="user-info">
+				<div>
+					<h2 class="info">Total Income</h2>
+					<h2 id="income-value">0</h2>
+				</div>
+				<div>
+					<h2 class="info">Total Expenses</h2>
+					<h2 id="expenses-value">0</h2>
+				</div>
+				<div>
+					<h2 class="info">Balance</h2>
+					<h2 id="balance">0</h2>
+				</div>
+		
+			</div>
+			<div class="transaction-enter">
+				<form>
+					<div id="title">
+						<label for="title">Title</label>
+						<input type="text" name="title" placeholder="Title" required>
+						<p id="title-msg" class="error">&nbsp;</p>
+					</div>
+					<div id="type">
+						<label for="type">Type</label>
+						<div class="radio">
+							<input type="radio" name="type" id="credit" value="Credit" >
+							<label for="credit">Credit</label>
+						</div>
+            <div class="radio">
+							<input type="radio" name="type" id="debit" value="Debit">
+							<label for="debit">Debit</label>
+					  </div>
+					</div>
+					<div id="amount">
+						<label for="amount">Amount</label>
+						<input type="number" name="amount" placeholder="Amount" required>
+						<p id="amount-msg" class="error">&nbsp;</p>
+					</div>
+					<div>
+						<input type="submit" id="submit-detail" value="SUBMIT"/>
+					</div>
+				</form>
+	
+			</div>
+	
+		</div>
+		<div class="transaction-detail">
+			<table style="border: 1;">
+				<tbody>
+					<tr>
+						<th>Title</th>
+						<th>Type</th>
+						<th>Amount</th>
+						<th>Time</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<script src="./global.js"></script>
+	<script src="./dashboard.js"></script>
+</body>
+</html>
