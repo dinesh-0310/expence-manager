@@ -1,0 +1,79 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    top: 0;
+    position: fixed;
+    background-color: rgb(241, 240, 240);
+    border-bottom: 1px solid rgb(253, 241, 241);
+}
+.nav > .logo > img{
+    width: 100px;
+}
+.nav > .logo{
+    text-align: justify;
+    padding: 0 20px;
+    width: 30%;
+}
+.nav > #after-login{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+#after-login > i{
+    margin-top: 30px;
+    padding: 2px 5px;
+    background-color: rgb(219, 212, 212);
+    height: 34px;
+}
+#after-login > p{
+    background-color: rgb(219, 212, 212);
+    padding: 2px;
+
+}
+.dropdown{
+    width: 100%;
+    margin: 8% 4% 0;
+}
+
+.dropdown > select{
+    width: 100px;
+    height: 40px;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    background-color: -internal-light-dark(rgb(231, 231, 231), rgb(117, 99, 99));
+}
+.transaction-detail{
+    margin-top: 10%;
+    width: 94%;
+    margin: 2% 4%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0,0.25), 0 8px 8px rgba(0, 0, 0,0.22);
+
+}
+tbody > tr{
+    height: 32px;
+    font-size: 20px;
+}
+tr > td{
+    text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+    .dropdown {
+        margin: 15% 0 2%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .dropdown {
+        margin: 20% 0 2%;
+    }
+}
