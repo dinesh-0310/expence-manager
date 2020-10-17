@@ -20,9 +20,10 @@ function handleForm(){
 			password : password, 
 			transactions : []  
 		}
-		console.log(user_obj)
 		arr.push(user_obj)
 		saveData("users", arr)
+		alert("Account created successfully")
+		location = "./login.html"
 	}
 }
 
