@@ -1,3 +1,4 @@
+
 window.addEventListener('load',function(){
 	var form = document.querySelector('form')
 	form.addEventListener('submit',handleLoginData)
@@ -32,4 +33,5 @@ function handleLoginData(){
 }
 function clearMsgBox(){
 	document.getElementById("error-msg").innerHTML = "&nbsp;"
+
 }
