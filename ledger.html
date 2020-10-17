@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transactions</title>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="./ledger.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="./logo.jpg" alt="Expence Manager logo">
+        </div>
+        <div id="after-login">
+            <i class='far'>&#xf2bd;</i>
+            <p id="username"></p>
+        </div>
+    </div>
+<div class="dropdown">
+    <select name="type" id="type">
+        <option value="All">All</option>
+        <option value="credit">Credit</option>
+        <option value="debit">Debit</option>
+    </select>
+</div>
+<div class="transaction-detail">
+    <table border="1">
+        <tbody id="tbody"></tbody>
+    </table>
+</div>
+<script src="./global.js"></script>
+<script src="./ledger.js"></script>
+
+</body>
+</html>
