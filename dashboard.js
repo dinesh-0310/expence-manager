@@ -29,7 +29,7 @@ function toLedger(){
 function renderDOM(){
 	arr = loadData("users")
 	usrData = userData(user)
-	console.log(usrData)
+	// console.log(usrData)
 
 	credit = 0
 	debit = 0

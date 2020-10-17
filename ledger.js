@@ -11,7 +11,7 @@ window.addEventListener('load',function(){
             data = arr[i];
         }
     }
-    console.log(data.name);
+    // console.log(data.name);
     username.textContent = data.name
     allTransaction()
 })
@@ -54,7 +54,7 @@ function getTableDetails(){
     let flag = false
     let tran = data.transactions;
     for(let i = tran.length-1; i >=0 ; i--){
-        console.log(tran[i].type);
+        // console.log(tran[i].type);
         let type = tran[i].type.trim().toLowerCase()
         if(result == type){
             var tr1 = document.createElement('tr')

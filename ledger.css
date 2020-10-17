@@ -69,11 +69,30 @@ tr > td{
 
 @media only screen and (max-width: 950px) {
     .dropdown {
-        margin: 15% 0 2%;
+        margin: 20% 0 2%;
+    }
+    #after-login > i{
+        margin-top: 10px;
+        background-color:rgb(241, 240, 240);
+    }
+    #after-login > p{
+        font-size: 15px;
+        background-color:rgb(241, 240, 240);
+
     }
 }
 @media only screen and (max-width: 600px) {
     .dropdown {
         margin: 20% 0 2%;
+    }
+    #after-login > i{
+        margin-top: 10px;
+        background-color:rgb(241, 240, 240);
+
+    }
+    #after-login > p{
+        font-size: 15px;
+        background-color:rgb(241, 240, 240);
+
     }
 }
