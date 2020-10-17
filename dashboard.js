@@ -11,13 +11,26 @@ function handleDashboard(){
 	form.addEventListener('submit', handleForm)
 	user = loadData("loggedIn")
 
+	let signout = document.querySelector(".login-btn")
+	signout.addEventListener("click", handleSignout)
+	let allTrans = document.querySelector('.trans-btn')
+	allTrans.addEventListener('click',toLedger)
 	renderDOM()
 }
 
+function handleSignout(){
+	localStorage.removeItem("loggedIn")
+	window.location = "login.html"
+}
+
+function toLedger(){
+	location.href = "ledger.html"
+}
 function renderDOM(){
 	arr = loadData("users")
 	usrData = userData(user)
 	console.log(usrData)
+
 	credit = 0
 	debit = 0
 	total = 0

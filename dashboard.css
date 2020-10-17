@@ -24,15 +24,21 @@ body{
     padding: 0 20px;
     width: 30%;
 }
-.nav > .after-login{
+.nav > #after-login{
     width: 30%;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
 }
-.nav > .login-div{
+#after-login > i{
+    padding: 6% 1% 0;
+}
+.nav > .login-div,#all-transaction{
     width: 30%;
     text-align: right;
 }
-.nav > .login-div > .login-btn{
-    margin: 5% 5%;
+.nav > .login-div > .login-btn,.trans-btn{
+    margin: 5%;
     width: 150px;
     height: 40px;
     background-color: rgba(233, 93, 51, 0.973);
@@ -41,7 +47,11 @@ body{
     border: 0;
     outline: none;
     border-radius: 2px;
+    cursor: pointer;
 
+}
+nav > .hide{
+    visibility: hidden;
 }
 .main{
     display: flex;
@@ -122,8 +132,16 @@ div > .error{
     padding-left: 10%;
     font-weight: 600;
 }
+tr > td,tr > th{
+    height: 35px;
+    color: black;
+    font-size: 20px;
+}
 .main > .transaction-detail{
-    width: 91%;
+    width: 88%;
+}
+.trans-btn{
+    margin: 1% 5%;
 }
 @media only screen and (max-width: 850px) {
  .main > .user{
